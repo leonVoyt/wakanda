@@ -1,0 +1,99 @@
+.custom-btn {
+  position: relative;
+  min-width: 168px;
+  margin-top: 16px;
+  position: relative;
+  padding: 12px 24px;
+  background: rgba(222, 244, 194, 0.2);
+  color: white;
+  border: 0px solid transparent;
+  font-size: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding-right: 50px;
+}
+.custom-btn-arrow {
+  position: absolute;
+  right: 15px;
+}
+.custom-btn::before,
+.custom-btn::after {
+  content: "";
+  position: absolute;
+  background: #0fff06;
+  transition: transform 0.4s ease;
+}
+
+.custom-btn::before {
+  height: 2px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.custom-btn::after {
+  width: 2px;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.custom-btn:hover::before {
+  transform: scaleX(1);
+}
+
+.custom-btn:hover::after {
+  transform: scaleY(1);
+}
+
+.custom-btn .animation-line::before,
+.custom-btn .animation-line::after {
+  content: "";
+  position: absolute;
+  background: #0fff06;
+  transition: transform 0.4s ease;
+}
+
+.custom-btn .animation-line::before {
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.custom-btn .animation-line::after {
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.custom-btn:hover .animation-line::before {
+  transform: scaleX(1);
+}
+
+.custom-btn:hover .animation-line::after {
+  transform: scaleY(1);
+}
+
+.gsap-text {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  will-change: transform, opacity;
+}

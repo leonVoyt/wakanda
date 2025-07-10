@@ -1,0 +1,57 @@
+.wrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: white;
+}
+.wakanda {
+  width: 104px;
+}
+.wakanda > img {
+  width: 100%;
+}
+.sprite {
+  width: auto;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+}
+
+.sprite {
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slideInLeft 1s forwards ease-out;
+  animation-delay: 0.4s; /* немного позже */
+}
+.xel {
+  transform: translateX(0);
+  opacity: 0;
+  animation: slideInRight 1s forwards ease-out;
+  animation-delay: 0.8s; /* немного позже */
+}
+.wakanda {
+  transform: translateX(100%);
+  opacity: 0;
+  animation: slideInRight 1s forwards ease-out;
+  animation-delay: 0.7s; /* немного позже */
+}
+
+@keyframes slideInLeft {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

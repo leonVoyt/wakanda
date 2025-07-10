@@ -1,0 +1,87 @@
+.wrapper {
+  max-width: 712px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.part1 {
+  position: relative;
+  font-family: Gill Sans, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 6px;
+  text-shadow: 0 0 3px rgba(153, 255, 136, 0.7), 0 0 5px #99ff88;
+  top: 28px;
+  left: 144px;
+  color: white;
+}
+.part2 {
+  color: white;
+  position: relative;
+  font-family: Gill Sans, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 6px;
+  text-shadow: 0 0 3px rgba(153, 255, 136, 0.7), 0 0 5px #99ff88;
+  top: 88px;
+  left: 488px;
+}
+.part3 {
+  color: white;
+  display: flex;
+  gap: 2px;
+  height: 2px;
+  position: relative;
+  font-family: Gill Sans, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 6px;
+  text-shadow: 0 0 3px rgba(153, 255, 136, 0.7), 0 0 5px #99ff88;
+  top: 3.2px;
+  left: 520px;
+}
+.part3 > div {
+  background: #2df872;
+  box-shadow: 0 0 3px rgba(153, 255, 136, 0.7), 0 0 5px #99ff88;
+  width: 100px;
+  height: 2px;
+}
+.part3 > div:first-child {
+  width: 20px;
+}
+
+.smallWrapper {
+  max-width: 350px;
+}
+.smalPart1 {
+  top: 20px;
+  left: 48px;
+}
+.smallPart2 {
+  top: 44.8px;
+  left: 216px;
+}
+@media (max-width: 850px) {
+  .wrapper {
+    max-width: 350px;
+  }
+  .part1 {
+    top: 20px;
+    left: 48px;
+  }
+  .part2 {
+    top: 44.8px;
+    left: 216px;
+  }
+}
+@media (max-width: 420px) {
+  .wrapper {
+    max-width: 240px;
+  }
+  .part1 {
+    top: 20px;
+    left: 16px;
+  }
+  .part2 {
+    top: 32px;
+    left: 136px;
+  }
+}

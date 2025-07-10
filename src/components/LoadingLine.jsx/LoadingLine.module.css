@@ -1,0 +1,25 @@
+.wrapper {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  height: 10px;
+  border-radius: 20px;
+  font-family: sans-serif;
+}
+
+.bar {
+  min-height: 5px;
+  background-color: #00964d;
+  transition: width 0.05s linear;
+  border-radius: 20px;
+}
+
+.progressText {
+  display: flex;
+  justify-content: flex-end;
+  color: #ffffff;
+  font-weight: bold;
+  pointer-events: none;
+  margin-top: 5px;
+}
