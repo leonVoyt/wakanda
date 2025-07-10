@@ -46,7 +46,7 @@ export const TitleSVG = () => {
             y="-20"
             width="753.6"
             height="231.1"
-            filterUnits="userSpaceOnUse"
+            filterUnits="objectBoundingBox"
             colorInterpolationFilters="sRGB"
           >
             <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
@@ -57,7 +57,7 @@ export const TitleSVG = () => {
               result="hardAlpha"
             ></feColorMatrix>
             <feOffset></feOffset>
-            <feGaussianBlur stdDeviation="13.3759"></feGaussianBlur>
+            <feGaussianBlur stdDeviation="5"></feGaussianBlur>
             <feColorMatrix
               type="matrix"
               values="0 0 0 0 0.0619048 0 0 0 0 0.433333 0 0 0 0 0 0 0 0 .7 0"
