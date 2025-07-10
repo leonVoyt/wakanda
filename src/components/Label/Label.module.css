@@ -12,6 +12,7 @@
 }
 .sprite {
   width: auto;
+  max-width: 80px;
   height: 100%;
 }
 
